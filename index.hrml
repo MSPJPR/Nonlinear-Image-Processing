@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nonlinear Image Processing</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Nonlinear Signal Processing - Image Filters</h1>
+        <input type="file" id="imageUpload" accept="image/*" />
+        
+        <div class="filters">
+            <button onclick="applyFilter('median')">Apply Median Filter</button>
+            <button onclick="applyFilter('weightedMedian')">Apply Weighted Median Filter</button>
+            <button onclick="applyFilter('erosion')">Apply Erosion</button>
+            <button onclick="applyFilter('dilation')">Apply Dilation</button>
+        </div>
+
+        <div>
+            <button onclick="simulateNoise()">Simulate Salt and Pepper Noise</button>
+        </div>
+
+        <div id="imageContainer"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
